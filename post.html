@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Meow+Script&family=Noto+Sans:ital@1&family=Roboto+Condensed:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="post.css" />
+    <script defer src="script.js"></script>
+    <script defer src="post.js"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <img src="icon/logo1.jpg" class="logo" alt="" />
+      <form class="search-box">
+        <input
+          type="text"
+          placeholder="search"
+          name="search-query"
+          id="search-input"
+        />
+        <button class="search-btn" type="submit">
+          <img src="icon/search.png" class="search-icon" alt="" />
+        </button>
+      </form>
+      <div class="nav-links">
+        <a href="index.html" class="nav-links"
+          ><img src="icon/home-nofill.png" class="nav-icon" alt=""
+        /></a>
+
+        <!-- Activity card -->
+        <div class="activity-log">
+          <img src="icon/heart-nofill.png" class="nav-icon" alt="" />
+
+          <div class="activity-container hide">
+            <div class="activity-card">
+              <img src="posts/post1.jpg" class="user-img" alt="" />
+              <p class="activity"><b>@DwightKS</b> liked your post</p>
+              <img src="posts/jimuser.jpg" class="activity-post" alt="" />
+            </div>
+
+            <div class="activity-card">
+              <img src="posts/jimuser.jpg" class="user-img" alt="" />
+              <p class="activity"><b>@JimHalpert</b> liked your post</p>
+              <img src="posts/selfpost2.jpg" class="activity-post" alt="" />
+            </div>
+
+            <div class="activity-card">
+              <img src="posts/pamuser.jpg" class="user-img" alt="" />
+              <p class="activity"><b>@PamBHalpert</b> liked your post</p>
+              <img src="posts/selfpost3.jpg" class="activity-post" alt="" />
+            </div>
+
+            <div class="activity-card">
+              <img src="posts/user3.jpg" class="user-img" alt="" />
+              <p class="activity"><b>@TweetyBird</b> liked your post</p>
+              <img src="posts/selfpost5.jpg" class="activity-post" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <a href="#" class="nav-links"
+          ><img src="icon/add-nofill.png" class="nav-icon" alt=""
+        /></a>
+        <a href="#" class="nav-links"
+          ><img src="icon/profile.png" class="nav-icon" alt=""
+        /></a>
+      </div>
+    </nav>
+
+    <!-- Main body -->
+
+    <div class="post">
+      <div class="post-feed">
+        <div class="post-overlay">
+          <img src="icon/red-heart.png" class="like-icon" alt="" />
+
+          <div class="share-window">
+            <h1 class="title">share the post</h1>
+            <div class="share-link-container">
+              <input
+                type="text"
+                id="share-link"
+                value="https://www.linkedin.com/in/aryan-tiwari-5276351a6/"
+                disabled
+              />
+              <button class="copy-btn">copy</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="post-img-container">
+          <img src="posts/post2.jpg" alt="" />
+        </div>
+      </div>
+
+      <div class="feed">
+        <div class="post-header">
+          <img src="posts/user_pic.jpg" class="user-icon" alt="" />
+          <p class="username">@BugsBunny</p>
+        </div>
+
+        <div class="post-detail">
+          <div class="detail-interactions">
+            <img src="icon/heart-nofill.png" class="like-btn" alt="" />
+            <img src="icon/send-nofill.png" class="send-btn" alt="" />
+            <img src="icon/comment-nofill.png" class="comment-btn" alt="" />
+          </div>
+
+          <span class="likes">1.5M likes</span>
+          <p class="username"><a href="user.html">@BugsBunny</a></p>
+          <p class="discription">Keep it up Scranton</p>
+
+          <div class="comment-container">
+            <div class="comment-card">
+              <img src="posts/user1.png" class="user-pic" alt="" />
+              <div class="comment-body">
+                <span class="username">@DwightKS</span>
+                <p class="comment">Amaing Get-togeather🔥🔥</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="comment-container">
+            <div class="comment-card">
+              <img src="posts/user2.jpg" class="user-pic" alt="" />
+              <div class="comment-body">
+                <span class="username">@JimHalpert</span>
+                <p class="comment">Athlead Loves y'all💘💘</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="comment-container">
+            <div class="comment-card">
+              <img src="posts/user3.jpg" class="user-pic" alt="" />
+              <div class="comment-body">
+                <span class="username">@PamHalpert</span>
+                <p class="comment">Togeatherness is strength🤝🏻🤝🏻</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="comment-container">
+            <div class="comment-card">
+              <img src="posts/sybil.jpg" class="user-pic" alt="" />
+              <div class="comment-body">
+                <span class="username">@Anjela</span>
+                <p class="comment">Train left from Verginia 😖😤</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="comment-box">
+            <input type="text" id="comment-input" placeholder="Add a comment" />
+            <button class="add-comment-btn">
+              <img src="icon/comment-nofill.png" alt="" />
+            </button>
+          </div>
+
+          <span class="comment-count">10.9K comments</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+.post {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  height: 75vh;
+  display: flex;
+}
+
+.post-feed {
+  width: 50%;
+  height: 100%;
+}
+
+.post-detail {
+  padding-top: 0;
+}
+
+.feed {
+  width: 50%;
+  position: relative;
+  padding-bottom: 40px;
+  overflow-y: scroll;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.2rem;
+}
+
+.comment-box {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  padding: 10px;
+  height: auto;
+  border: none;
+  border-top: 2px solid black;
+  background: white;
+  z-index: 2;
+}
+
+#comment-input {
+  border: 1px solid;
+}
+
+.comment-container {
+  width: calc(100% + 30%);
+  background: white;
+  margin-left: -12px;
+  padding: 20px;
+}
+
+.comment-card {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.comment-card .user-pic {
+  margin-top: 5px;
+  height: 40px;
+  width: 40px;
+}
+
+.comment-card .username {
+  font-size: 1.1rem;
+  opacity: 0.5;
+}
+
+.comment {
+  font-size: 1.1rem;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.post-detail .username a {
+  color: rgb(163, 155, 155);
+  text-transform: capitalize;
+  text-decoration: none;
+}

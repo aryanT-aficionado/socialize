@@ -1,0 +1,21 @@
+{
+  "name": "socialize",
+  "version": "1.0.0",
+  "description": "social media app clone",
+  "default": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "keywords": [
+    "social",
+    "media",
+    "portfolio",
+    "project"
+  ],
+  "author": "Aryan Tiwari",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.2.1"
+  }
+}
